@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maetha Land Connect</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* ป้องกันการเลื่อนหน้าจอที่ตัวเว็บหลัก */
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      position: absolute;
+      top: -27px; /* ดันแถบ Google Apps Script ขึ้นไปซ่อน (อาจต้องปรับเป็น -30px หากแถบหนาขึ้น) */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 27px); /* ชดเชยความสูงที่โดนดันขึ้นไป */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <!-- นำลิงก์ของคุณมาใส่ที่นี่ -->
+    <iframe src="https://script.google.com/macros/s/AKfycbx3r4JFR7VD4fn8vfDiLpBzOmzGh8f-Dg5jSm1mY3jD1P-rNGyht0w4E7GIDjldrfSlmg/exec"></iframe>
+  </div>
+</body>
+</html>
